@@ -50,6 +50,7 @@ fc-cache -f -v
 ##Move zsh config
 ###Move .zshrc
 echo "Setting up ZSH"
+sed -i "s/USER/$(whoami)/g" zshrc
 cp zshrc ~/.zshrc
 
 ###Move .p10k
