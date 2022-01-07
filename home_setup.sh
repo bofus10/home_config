@@ -96,6 +96,8 @@ else
     mkdir -p ~/.vscode && tar -zxf extensions.tar.gz -C ~/.vscode/
 fi
 
+sudo curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | bash
+
 read -p "Reboting to apply changes... continue? [y/*]" accept
 if [[ $accept == "y" ]] || [[ $accept == "Y" ]]; then
     sudo reboot
